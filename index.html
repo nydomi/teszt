@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body onload="asd()" onunload = "jh()">
+    <button onclick="openWin('www.w3schools.com')"> asd</button>
+    
+    <script language="JavaScript">
+        function openWin(URL)
+        {
+            console.log(URL);
+            var lehet = "https://" + URL;
+            console.log(lehet);
+            window.open( lehet,"new_window","toolbar=no,width=350,height=400,status=no,scrollbars=yes,resizable=no,menubar=no")
+        }
+        function asd(){
+        }
+        function jh(){
+            window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley');
+        }
+        console.log("asd");
+        setTimeout(console.log("123",5000));
+
+        let teszt = "as1231231d 1123";
+        console.log(teszt.length);
+        console.log(teszt.match("as"));
+
+
+        let fruite = ["manó", "alma", "szilva"];
+        let vegies = ["nemtom", "mentom2" ,"nemtom3"];
+        console.log(fruite.pop()); //pop() -> megkapja a tömb utolsó értékét és az eltávolítja a tömből
+        console.log(fruite.concat(vegies)); //concat() -> tömböket vagy stringeket olvaszt össze
+        console.log(fruite.sort());//növekvő vagy betü rendi sorrend
+        console.log(fruite.push("asd"));//elemet adunk hozzá a tömhöz (kiírja a tömb hosszát ha nem írunk bele semmit)
+
+    </script>
+</body>
+</html>
