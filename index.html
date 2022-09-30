@@ -21,6 +21,7 @@
         <input type="text" name="valami"><br>
         <input type="button" value="click" onclick="igen()">
     </form>
+    <hr>
     <form name="szamolo">
         <input type="text" name="ertek1"><br>
         <label for="ertek2">asd</label>
@@ -33,7 +34,19 @@
         <input type="text" name="magassag">
         <input type="button" value="click" onclick="hengerSzam()">
     </form>
+    <hr>
 
+
+    <form name="bank">
+        <label>Pénz: </label>
+        <input type="text" name="money"><br>
+        <label>Kamat: </label>
+        <input type="text" name="kamat"><br>
+        <label>Hónap: </label>
+        <input type="text" name="honap" >
+        <br>
+        <input type="button" onclick="bankSzam()" value="XD">
+    </form>
 
     <script src="szamolas.js"></script>
 
@@ -78,7 +91,6 @@
         console.log(fruite.concat(vegies)); //concat() -> tömböket vagy stringeket olvaszt össze
         console.log(fruite.sort());//növekvő vagy betü rendi sorrend
         console.log(fruite.push("asd"));//elemet adunk hozzá a tömhöz (kiírja a tömb hosszát ha nem írunk bele semmit)
-        document.write("<br>Baj van a mátrixban");
 
     </script>
 </body>
