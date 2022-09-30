@@ -49,3 +49,14 @@ function hatter(hatterSzin){
     }
 }
 
+let elem = 0;
+let kepekSora = ["https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg", "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg","https://media-cldnry.s-nbcnews.com/image/upload/rockcms/2022-08/220805-border-collie-play-mn-1100-82d2f1.jpg"];
+function kutyik(){
+    elem++;
+    if(elem>2){
+        elem=0;
+    }
+    document.kutyusKepe.kepek.src=kepekSora[elem];
+    console.log(elem);
+}
+
