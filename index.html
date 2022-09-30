@@ -15,7 +15,43 @@
 <body onload="asd()" onunload = "jh()">
     <button onclick="openWin('www.w3schools.com')"> asd</button>
     
+    
+    
+    <form name="tesztLap">
+        <input type="text" name="valami"><br>
+        <input type="button" value="click" onclick="igen()">
+    </form>
+    <form name="szamolo">
+        <input type="text" name="ertek1"><br>
+        <label for="ertek2">asd</label>
+        <input type="text" name="ertek2"><br>
+        <input type="button" value="click" onclick="szamolas()">
+    </form>
+    <hr>
+    <form name="henger">
+        <input type="text" name="sugar">
+        <input type="text" name="magassag">
+        <input type="button" value="click" onclick="hengerSzam()">
+    </form>
+
+
+    <script src="szamolas.js"></script>
+
+
     <script language="JavaScript">
+    function szamolas(){
+        let a = document.szamolo.ertek1.value;
+        let b = document.szamolo.ertek2.value;
+        document.write(parseInt(a)+parseInt(b));
+    }
+    function igen(){    
+        let x = document.tesztLap.valami.value;
+        alert("XD "+ x)
+    }
+
+
+    
+
         function openWin(URL)
         {
             console.log(URL);
@@ -42,7 +78,7 @@
         console.log(fruite.concat(vegies)); //concat() -> tömböket vagy stringeket olvaszt össze
         console.log(fruite.sort());//növekvő vagy betü rendi sorrend
         console.log(fruite.push("asd"));//elemet adunk hozzá a tömhöz (kiírja a tömb hosszát ha nem írunk bele semmit)
-        
+        document.write("<br>Baj van a mátrixban");
 
     </script>
 </body>
