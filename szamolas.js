@@ -19,6 +19,33 @@ function bankSzam(){
     console.log("Honapszam: "+honapSzam);
     console.log(penzEretk);
 
+}
 
+function fizetesEmeles(){
+    let fizetes =parseFloat( document.fizet.haviFizetes.value);
+    
+    if(fizetes>=10000){
+        fizetes=fizetes*1.25;
+        document.getElementById('eredmeny').innerHTML="A fizetésed " + fizetes + "-re nőtt"
+    }
+    else{
+        document.getElementById('eredmeny').innerHTML="Nem nőtt az egyeleged";
+    }
+}
+
+function hatter(hatterSzin){
+    switch(hatterSzin){
+        case 'piros':
+            document.body.style.backgroundColor="red";
+            break;
+        case 'sarga':
+            document.body.style.backgroundColor="yellow";
+            break;
+        case 'feher':
+            document.body.style.backgroundColor="white";
+            break;
+        default:
+            document.body.style.backgroundColor="gray";
+    }
 }
 
