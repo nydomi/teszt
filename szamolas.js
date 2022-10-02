@@ -1,5 +1,4 @@
 console.log("ITT VAGYOK");
-
 function hengerSzam(){
     let a = parseInt(document.henger.sugar.value);
     let b = parseInt(document.henger.magassag.value);
@@ -58,5 +57,9 @@ function kutyik(){
     }
     document.kutyusKepe.kepek.src=kepekSora[elem];
     console.log(elem);
+} 
+function randomKepek(){
+    let random = Math.floor(Math.random()*kepekSora.length);
+    document.kutyusKepe.rdKepek.src=kepekSora[random];
+    console.log(random);
 }
-
